@@ -11,12 +11,13 @@
       <h1 class="title">내배캠 최고 평점 영화 콜렉션</h1>
     </header>
     <form class="searchBox">
-      <label> 영화 검색 : </label>
+      <label>영화 검색 :</label>
       <input
         type="text"
         id="search-input"
         placeholder="영화 제목을 검색해 보세요"
         autofocus
+        onkeydown="if(event.keyCode == 13) {event.preventDefault(); filter();};"
       />
       <button id="search-button" type="button">검색</button>
     </form>
