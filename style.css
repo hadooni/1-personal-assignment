@@ -64,6 +64,7 @@ header {
   border-radius: 20px;
   text-align: center;
   box-shadow: 5px 5px 5px 5px #C9C9C9;
+  cursor: pointer;
 }
 
 .movie-card > img {

@@ -32,7 +32,7 @@ function createMovieCard(movie) {
 
 
 // 받아온 데이터로 카드 생성 및 DOM에 추가
-fetch(URL)
+ fetch(URL)
  .then(response => response.json())
  .then(data => {
     const movies = data.results;
