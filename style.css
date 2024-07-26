@@ -1,0 +1,34 @@
+/* 타이틀 */
+header {
+  background-color: #d7f4d2;
+}
+
+.title {
+    font-size: 40px;
+    text-align: center;
+  }
+
+/* 영화 검색 */
+.searchBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 영화 카드 */
+#movie-container {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px 15%;
+  flex-wrap: wrap;
+}
+
+.movie-card {
+  width: 250px;
+  height: 800px;
+}
+
+.movie-card > img {
+  width: 250px;
+  height: 350px;
+}
