@@ -1,34 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Gowun+Dodum&display=swap');
+* {
+  font-family: 'Gowun Dodum', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+}
+
 /* 타이틀 */
 header {
+  display: flex;
   background-color: #d7f4d2;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+  margin-bottom: 20px;
 }
 
 .title {
-    font-size: 40px;
-    text-align: center;
-  }
+  font-size: 60px;
+  font-family: 'Black Han Sans', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
 
 /* 영화 검색 */
 .searchBox {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 30px;
+  font-size: 30px;
+}
+
+#search-input {
+  margin-left: 10px;
+  font-size: 25px;
+}
+
+#search-button {
+  margin-left: 10px;
+  width: 70px;
+  height: 42px;
+  font-size: 25px;
 }
 
 /* 영화 카드 */
 #movie-container {
   display: flex;
   justify-content: space-around;
-  gap: 20px 15%;
+  gap: 50px 5%;
   flex-wrap: wrap;
+  padding: 30px;
 }
 
 .movie-card {
-  width: 250px;
-  height: 800px;
+  background-color: #D8FAFF;
+  padding: 20px;
+  width: 270px;
+  height: 850px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 5px 5px 5px 5px #C9C9C9;
 }
 
 .movie-card > img {
   width: 250px;
   height: 350px;
+  border-radius: 20px;
+}
+
+h3 {
+  font-weight: bold;
 }
