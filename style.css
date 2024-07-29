@@ -12,18 +12,20 @@ body {
 /* 타이틀 */
 header {
   display: flex;
-  background-color: #d7f4d2;
   justify-content: center;
   align-items: center;
-  padding: 20px 0;
   margin-bottom: 20px;
+  background-color: #38383818;
 }
 
 .title {
-  font-size: 60px;
+  font-size: 80px;
   font-family: 'Black Han Sans', sans-serif;
   font-weight: 400;
   font-style: normal;
+  border-radius: 30px;
+  color: #2E2B2F;
+  text-shadow: 4px 4px 0px white, 8px 8px 0px #C3C3C3;
 }
 
 /* 영화 검색 */
@@ -31,7 +33,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
   font-size: 30px;
 }
 
@@ -49,18 +51,17 @@ header {
 
 /* 영화 카드 */
 #movie-container {
-  display: flex;
-  justify-content: space-around;
-  gap: 50px 5%;
-  flex-wrap: wrap;
-  padding: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: repeat(3, max-content);
+  justify-items: center;
+  gap: 80px;
 }
 
 .movie-card {
-  background-color: #D8FAFF;
+  background-color: white;
   padding: 20px;
   width: 270px;
-  height: 850px;
   border-radius: 20px;
   text-align: center;
   box-shadow: 5px 5px 5px 5px #C9C9C9;
